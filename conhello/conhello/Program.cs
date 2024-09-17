@@ -1,13 +1,38 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("имя?");
-string? name = Console.ReadLine();
-Console.WriteLine("город?");
-string? city = Console.ReadLine();
+///<summary>
+///Вернуть прямоугольник в виде массива строк
+///</summary>
+namespace cnsPrintRectangle
+{
+    internal class Program
+    {
+        /// <summary> 
+        /// лол 
+        /// </summary> 
 
-int? age = null;
+        static string[] GetRectangle(int width, int height, char symbol = '*', bool isFill = true, char clear = ' ')
+        {
 
-Console.WriteLine("Имя = "+name +", город = "+ city);
-Console.WriteLine("Имя = {0}, город = {1}", name, city);
-Console.WriteLine($"Имя = {name}, Город = {city}");
+            List<string> result = new();
+            for (int i = 0; i < height; i++)
+                result.Add((isFill || i == 0 || i == height - 1) ? (new string(symbol, width)) : (symbol + new string(clear, width - 2) + symbol));
 
-Console.WriteLine("город?");
+            return result.ToArray();
+        }
+
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Ширина высота символ рисования заполнить фигуру?");
+            int width = Convert.ToInt32(Console.ReadLine());
+            int height = Convert.ToInt32(Console.ReadLine());
+            char symbol = Convert.ToChar(Console.ReadLine());
+            bool isFill = Console.ReadLine().ToLower() == "y";
+
+            var shape = GetRectangle(10, 5);
+
+            foreach (var line in shape)
+                Console.WriteLine(line);
+
+        }
+    }
+}
