@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35222.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageCutter", "WFA1\ImageCutter.csproj", "{79059407-6047-4A9D-8F37-D3C990CBCF36}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "libImageCut", "libWFA1\libImageCut.csproj", "{4D730A91-EC13-4E3C-AEB2-505FE7D87C02}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{79059407-6047-4A9D-8F37-D3C990CBCF36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79059407-6047-4A9D-8F37-D3C990CBCF36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79059407-6047-4A9D-8F37-D3C990CBCF36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79059407-6047-4A9D-8F37-D3C990CBCF36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D730A91-EC13-4E3C-AEB2-505FE7D87C02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D730A91-EC13-4E3C-AEB2-505FE7D87C02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D730A91-EC13-4E3C-AEB2-505FE7D87C02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D730A91-EC13-4E3C-AEB2-505FE7D87C02}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F90CE660-36C2-4221-997F-CA53F34D836E}
+	EndGlobalSection
+EndGlobal
